@@ -36,11 +36,9 @@ const ContactUs = () => {
           <div className="flex-grow-[2]">
             <input
               type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter Email"
-              className="w-full px-4 py-2 border bg-background-secondary rounded-md focus:outline-none focus:ring-2 focus:ring-[#3EDDE2] placeholder-foreground/60 text-foreground"
+              className="w-full px-4 py-2 border-transparent bg-[#E7EDF9] rounded-md  placeholder-[#081227]  text-foreground"
               required
+              placeholder="Enter Email"
             />
           </div>
 
@@ -48,7 +46,7 @@ const ContactUs = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-full px-6 py-2 rounded-md text-white font-medium ${
+              className={`w-full px-6 py-2 rounded-md text-[#081227] font-medium ${
                 isSubmitting
                   ? 'bg-[#2bcbd1] cursor-not-allowed'
                   : 'bg-[#3EDDE2] hover:bg-[#2bcbd1]'

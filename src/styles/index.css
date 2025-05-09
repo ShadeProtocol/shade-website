@@ -1,0 +1,14 @@
+@import './tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'DM Sans', sans-serif;
+  background-color: #070e17;
+  color: #ffffff;
+}
+
+/* Add any other global styles here */

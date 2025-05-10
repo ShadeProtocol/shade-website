@@ -76,7 +76,7 @@ const FaqSection: React.FC = () => {
           <div className="mt-8 text-center text-black dark:text-white">
             <Button 
               onClick={handleSeeMore}
-              className="px-6 py-2 !text-[#081227] !border-[#081227] bg-[#f2f2f2] hover:bg-[#3ddde1] dark:text-white dark:border-white dark:bg-[#3ddde1] dark:hover:bg-[#21a0a4]"
+              className="px-6 py-2 text-[#081227]! border-[#081227]! bg-[#f2f2f2] hover:bg-[#3ddde1] dark:text-white dark:border-white dark:bg-[#3ddde1] dark:hover:bg-[#21a0a4]"
             >
               See More
             </Button>

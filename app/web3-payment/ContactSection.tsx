@@ -43,7 +43,7 @@ const ContactSection: React.FC = () => {
             type="email" placeholder="Enter Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="flex-grow bg-[#e7edf9] rounded-lg"
+            className="grow bg-[#e7edf9] rounded-lg"
             required
           />
           <Button 

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/icon/Button';
 import InputField from '@/components/ui/InputField';
 
 const ContactSection: React.FC = () => {

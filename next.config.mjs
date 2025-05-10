@@ -10,6 +10,8 @@ const nextConfig = {
     ];
   },
   webpack(config) {
+    // Remove or comment out this block if you don't need it:
+    /*
     config.module.rules.push({
       test: /\.(jsx|tsx)$/,
       exclude: [/node_modules/],
@@ -17,6 +19,7 @@ const nextConfig = {
         loader: '@dhiwise/component-tagger/nextLoader',
       }],
     });
+    */
     return config;
   },
 };

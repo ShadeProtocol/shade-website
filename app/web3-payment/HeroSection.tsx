@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import Button from '@/components/ui/Button';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import Button from '@/components/ui/icon/Button';
+import { ThemeToggle } from '@/components/ui/theme/ThemeToggle';
 
 const HeroSection: React.FC = () => {
   const handleViewDocs = () => {

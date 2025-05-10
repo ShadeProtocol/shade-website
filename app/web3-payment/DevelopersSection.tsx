@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/icon/Button';
 
 const DevelopersSection: React.FC = () => {
   const handleSeeDocumentation = () => {

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import type { Feature } from '@/types/web3-payment';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import { ThemeToggle } from '@/components/ui/theme/ThemeToggle';
 
 
 

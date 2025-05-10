@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/icon/Button';
 import Link from 'next/link';
 
 interface HeroSectionProps {
@@ -20,18 +20,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <div className="relative overflow-hidden">
       
-      {/* <div
-  className="absolute animate-blob1 bg-[#2042BB] rounded-full opacity-60 mix-blend-multiply blur-2xl"
-  style={{ width: '200px', height: '200px', top: '0', left: '0', zIndex: 0 }}
-/>
-<div
-  className="absolute animate-blob2 bg-[#313A5B] rounded-full opacity-40 mix-blend-multiply blur-2xl"
-  style={{ width: '200px', height: '200px', top: '0', left: '0', zIndex: 0 }}
-/>
-<div
-  className="absolute animate-blob3 bg-[#3CC9CD] rounded-full opacity-50 mix-blend-multiply blur-2xl"
-  style={{ width: '200px', height: '200px', top: '0', left: '0', zIndex: 0 }}
-/> */}
+      
 
       <div className="relative z-10 px-6 md:px-24 pt-20 pb-32">
         <h1 className="text-4xl md:text-7xl lg:text-[108px] font-bold text-white leading-tight max-w-5xl mb-8">

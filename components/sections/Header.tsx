@@ -2,8 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Button from '@/components/ui/Button';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import Button from '@/components/ui/icon/Button';
+import { ThemeToggle } from '@/components/ui/theme/ThemeToggle';
 
 
 const Header: React.FC = () => {

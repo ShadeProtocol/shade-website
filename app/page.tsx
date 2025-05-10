@@ -1,9 +1,10 @@
 import React from 'react';
-import Header from '@/components/common/Header';
+import Header from '@/components/sections/Header';
+import { ThemeProvider } from 'next-themes';
 
 
-import Accordion from '@/components/common/Accordion';
-import Button from '@/components/ui/Button';
+import Accordion from '@/components/sections/Accordion';
+import Button from '@/components/ui/icon/Button';
 
 
 export default function Home() {

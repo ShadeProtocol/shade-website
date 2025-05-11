@@ -354,6 +354,15 @@
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
+  .animate-blob1 {
+    animation: blob1 8s ease-in-out infinite;
+  }
+  .animate-blob2 {
+    animation: blob2 8s ease-in-out infinite;
+  }
+  .animate-blob3 {
+    animation: blob3 8s ease-in-out infinite;
+  }
   .cursor-not-allowed {
     cursor: not-allowed;
   }
@@ -566,6 +575,12 @@
   }
   .text-left {
     text-align: left;
+  }
+  .font-dm-sans {
+    font-family: DM Sans, sans-serif;
+  }
+  .font-inter {
+    font-family: Inter, sans-serif;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -899,64 +914,64 @@
     }
   }
   .dark\:border-0 {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       border-style: var(--tw-border-style);
       border-width: 0px;
     }
   }
   .dark\:border-white {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       border-color: var(--color-white);
     }
   }
   .dark\:bg-\[\#3CC9CD\] {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       background-color: #3CC9CD;
     }
   }
   .dark\:bg-\[\#3ddde1\] {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       background-color: #3ddde1;
     }
   }
   .dark\:bg-\[\#070e17\] {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       background-color: #070e17;
     }
   }
   .dark\:bg-\[\#313A5B\] {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       background-color: #313A5B;
     }
   }
   .dark\:bg-\[\#2042BB\] {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       background-color: #2042BB;
     }
   }
   .dark\:bg-gray-700 {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       background-color: var(--color-gray-700);
     }
   }
   .dark\:text-white {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       color: var(--color-white);
     }
   }
   .dark\:invert {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       --tw-invert: invert(100%);
       filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     }
   }
   .dark\:filter {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     }
   }
   .dark\:hover\:bg-\[\#21a0a4\] {
-    @media (prefers-color-scheme: dark) {
+    &:is(.dark *) {
       &:hover {
         @media (hover: hover) {
           background-color: #21a0a4;
@@ -1194,6 +1209,39 @@
 @property --tw-ease {
   syntax: "*";
   inherits: false;
+}
+@keyframes blob1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(60vw, 20vh) scale(1.1) rotate(120deg);
+  }
+  66% {
+    transform: translate(10vw, 60vh) scale(0.9) rotate(240deg);
+  }
+}
+@keyframes blob2 {
+  0%, 100% {
+    transform: translate(60vw, 20vh) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(10vw, 60vh) scale(1.1) rotate(120deg);
+  }
+  66% {
+    transform: translate(0, 0) scale(0.9) rotate(240deg);
+  }
+}
+@keyframes blob3 {
+  0%, 100% {
+    transform: translate(10vw, 60vh) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(0, 0) scale(1.1) rotate(120deg);
+  }
+  66% {
+    transform: translate(60vw, 20vh) scale(0.9) rotate(240deg);
+  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {

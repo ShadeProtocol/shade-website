@@ -3,6 +3,7 @@ import '../styles/index.css';
 import type { Metadata } from 'next';
 import '../styles/tailwind.css';
 
+
 export const metadata: Metadata = {
   title: 'Next.js 15 with TypeScript and Tailwind CSS',
   description: 'A boilerplate project with Next.js 15, TypeScript and Tailwind CSS 3.4.17',

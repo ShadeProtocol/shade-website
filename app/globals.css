@@ -1,4 +1,8 @@
 @import 'tailwindcss';
+/* @import 'tailwindcss/components'; */
+
+
+
 
 /* dark mode support */
 @custom-variant dark (&:where(.dark, .dark *));
@@ -16,7 +20,41 @@
   --secondary: #fff;
 }
 
+
+@keyframes blob1 {
+0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+33% { transform: translate(60vw, 20vh) scale(1.1) rotate(120deg); }
+66% { transform: translate(10vw, 60vh) scale(0.9) rotate(240deg); }
+}
+
+@keyframes blob2 {
+0%, 100% { transform: translate(60vw, 20vh) scale(1) rotate(0deg); }
+33% { transform: translate(10vw, 60vh) scale(1.1) rotate(120deg); }
+66% { transform: translate(0, 0) scale(0.9) rotate(240deg); }
+}
+
+@keyframes blob3 {
+0%, 100% { transform: translate(10vw, 60vh) scale(1) rotate(0deg); }
+33% { transform: translate(0, 0) scale(1.1) rotate(120deg); }
+66% { transform: translate(60vw, 20vh) scale(0.9) rotate(240deg); }
+}
+
+@layer components {
+.animate-blob1 {
+  animation: blob1 8s ease-in-out infinite;
+}
+
+.animate-blob2 {
+  animation: blob2 8s ease-in-out infinite;
+}
+
+.animate-blob3 {
+  animation: blob3 8s ease-in-out infinite;
+}
+}
+
 @theme inline {
+  
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -28,6 +66,9 @@
   --color-primary: #3edde2;
   --color-secondary: var(--secondary);
   --color-brand-black-100: #0b131e;
+
+  
+   
 }
 
 body {

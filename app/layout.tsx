@@ -24,8 +24,6 @@ export default function RootLayout({
     <html lang="en">
       <body>
       {children}
-        <script id="dhws-errorTracker" src="/dhws-error-tracker.js"></script>
-  <script id="dhws-elementInspector" src="/dhws-web-inspector.js"></script>
 </body>
     </html>
   );

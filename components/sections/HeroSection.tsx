@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-// import Button from '@/components/ui/Button';
+
 
 import Button from '../ui/Button';
 
@@ -25,6 +25,7 @@ const HeroSection: React.FC = () => {
         className="absolute animate-blob3 bg-[#2042BB] dark:bg-[#2042BB] rounded-full opacity-50 mix-blend-normal blur-2xl"
         style={{ width: '578.7235107421875px', height: '578.7235107421875px', top: '372.36px', left: '254.69px', zIndex: 0 }}
       />
+
       <div className="pl-16 mt-8">
         <div className="flex items-center justify-between mb-8 pl-4 pr-20">
           <div className="text-2xl font-bold text-[#21a0a4]">Shade</div>
